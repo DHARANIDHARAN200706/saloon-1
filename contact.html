@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Glamour Parlour</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #1a1a1a;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 100vh;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      background-color: #000;
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 18px;
+      padding: 0.5rem 0.5rem;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    nav a:hover,
+    nav a.active {
+      background-color: black;
+      color: rgb(255, 162, 162);
+    }
+
+    .contact-container {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(30px);
+      padding: 3rem;
+      border-radius: 2rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      text-align: center;
+      max-width: 450px;
+      margin: 8rem auto 2rem; /* offset for fixed navbar */
+      position: relative;
+      overflow: hidden;
+      animation: fadeIn 1.5s ease;
+      color: #fff;
+    }
+
+    @keyframes fadeIn {
+      from {
+        transform: translateY(50px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .contact-container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #e91e63;
+    }
+
+    .contact-info p {
+      margin: 0.5rem 0;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+
+    .social-icons a {
+      color: white;
+      background-color: #e91e63;
+      padding: 1rem;
+      border-radius: 10%;
+      font-size: 1.5rem;
+      transition: all 0.3s ease;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.2) rotate(5deg);
+      background-color: #d81b60;
+    }
+
+    #lens-section {
+      margin-top: 2rem;
+    }
+
+    #lens-section input[type="file"] {
+      margin: 1rem auto;
+      padding: 0.6rem;
+      background-color: #fce4ec;
+      border: 2px dashed #ec407a;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      display: block;
+    }
+
+    #lens-section input[type="file"]:hover {
+      background-color: #f8bbd0;
+      border-color: #d81b60;
+      transform: scale(1.05);
+    }
+
+    #lens-preview {
+      margin-top: 1rem;
+      max-width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+      display: none;
+      transition: filter 0.5s ease;
+    }
+
+    .footer {
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #ffffff;
+    }
+
+    .sparkle {
+      position: absolute;
+      top: -20px;
+      right: -20px;
+      width: 60px;
+      height: 60px;
+      background: radial-gradient(circle, #ff69b4 20%, transparent 70%);
+      border-radius: 50%;
+      animation: sparkleMove 3s infinite ease-in-out;
+      opacity: 0.7;
+    }
+
+    @keyframes sparkleMove {
+      0% { transform: translate(0, 0) scale(1); }
+      50% { transform: translate(-200px, 200px) scale(1.5); opacity: 0.4; }
+      100% { transform: translate(0, 0) scale(1); }
+    }
+
+    @media (max-width: 600px) {
+     
+
+      .contact-container {
+        margin: 10rem 1rem 2rem;
+      }
+    }
+
+    @media (max-width: 524px) {
+    nav a{
+      padding-left: 10px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+      
+  }
+nav h3{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ 
+}
+
+
+  </style>
+</hea
+  </style>
+</head>
+
+<body>
+
+  <nav>
+  <p> <a href="index.html">HOME</a>
+    <a href="dataentryform.html" >BOOK</a>
+    <a href="contact.html" class="active">CONTACT</a>
+    <a href="menu.html">MENU</a>
+    <a href="offers.html">OFFERS</a></p>
+  </nav>
+
+  <div class="contact-container">
+    <div class="sparkle"></div>
+    <h1>Get in Touch</h1>
+    <p>Follow us on social media or message us directly.</p>
+
+    <div class="contact-info">
+      <p><strong>📍 Address:</strong> 123 Beauty Lane, Style City, Glam State</p>
+      <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.instagram.com/yourparlour" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/yourwhatsapplink" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.facebook.com/yourparlourpage" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    </div>
+
+    <div id="lens-section">
+      <h2 style="color:#e91e63">Try Our Look Detector! 💄</h2>
+      <p>Upload a selfie and preview makeup styles using AI!</p>
+      <input type="file" accept="image/*" onchange="previewImage(event)" />
+      <img id="lens-preview" src="" alt="Preview" />
+    </div>
+
+    <div class="footer">&copy; 2025 Glamour Parlour. All rights reserved.</div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.social-icons a').forEach(icon => {
+      icon.addEventListener('mouseenter', () => {
+        icon.style.boxShadow = '0 0 20px rgba(233, 30, 99, 0.6)';
+      });
+      icon.addEventListener('mouseleave', () => {
+        icon.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)';
+      });
+    });
+
+    function previewImage(event) {
+      const reader = new FileReader();
+      reader.onload = function () {
+        const output = document.getElementById('lens-preview');
+        output.src = reader.result;
+        output.style.display = 'block';
+        output.style.filter = 'brightness(1.15) contrast(1.1) saturate(1.5) hue-rotate(-10deg) drop-shadow(0 0 8px #f06292)';
+      };
+      reader.readAsDataURL(event.target.files[0]);
+    }
+  </script>
+</body>
+</html>
